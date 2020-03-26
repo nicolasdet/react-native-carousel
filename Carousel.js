@@ -31,6 +31,7 @@ var Carousel = createReactClass({
       animate: true,
       delay: 1000,
       loop: true,
+      page: this.initialPage,
     };
   },
 
@@ -136,6 +137,9 @@ var Carousel = createReactClass({
   },
 
   render() {
+    if(this.props.page != this.state.activePage) {
+      this.indicatorPressed(this.props.page);
+    }
     return (
       <View style={{ flex: 1 }}>
         <CarouselPager
