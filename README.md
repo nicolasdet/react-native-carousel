@@ -22,6 +22,7 @@ indicatorText= '•' // Active indicator content ( You can customize to use any 
 animate={true} // Enable carousel autoplay
 delay={1000} // Set Animation delay between slides
 loop={true} // Allow infinite looped animation. Depends on Prop {...animate} set to true.
+page={0} // Allow to manualy change the page by updating the page props
  
 ```
 
